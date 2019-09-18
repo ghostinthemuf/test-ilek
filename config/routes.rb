@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'pages/parser'
+  root to: 'pages#parser'
+
+  resources :pages do
+    collection { post :upload }
+  end
 end

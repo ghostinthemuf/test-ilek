@@ -1,0 +1,25 @@
+<div class="container">
+
+  <%= image_tag "https://d24n82pb4c3fwd.cloudfront.net/static/media/logo.ae5cd2fb.svg", alt: "Logo Ilek" %>
+
+  <h1 id="parser-title">Parseur de données clients</h2>
+
+  <div class="upload-form">
+    <%= form_with(url: {action: :upload}, multipart: true, remote: true) do %>
+      <p><%= file_field_tag 'data_file' %></p>
+      <p><%= submit_tag 'ENVOYER', class: "submit-btn" %></p>
+    <% end %>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <% @keys.each do |key| %>
+          <th> <%= key %> </th>
+        <% end %>
+      </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+  </table>
+
+</div>

@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(198, 226, 234);
+}
+
+.container {
+  margin: 60px auto;
+  padding: 60px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+#parser-title {
+  margin: 40px 0;
+}
+
+.upload-form {
+  margin: 40px 0;
+}
+
+.submit-btn {
+  height: 48px;
+  background-color: rgb(85, 215, 201);
+  box-shadow: rgb(85, 215, 201) 0px 20px 21px -15px;
+  font-size: 16px;
+  color: white;
+  padding: 4px 24px;
+  border: none;
+  border-radius: 40px;
+  outline: none;
+}
