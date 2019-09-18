@@ -1,24 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Cette petite application permet de parser des fichiers XML tels que structurés spécifiquement pour l'exercice. Un formulaire permet d'uploader un tel fichier, qui écrasera automatiquement le précédent et générera l'affichage des résultats du parsing sur la page en AJAX, sans avoir à la rafraîchir.
